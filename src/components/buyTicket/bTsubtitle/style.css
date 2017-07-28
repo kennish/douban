@@ -1,0 +1,9 @@
+.bTsubtitle{
+    margin-bottom: 15px;
+}
+.bTsubtitle h2{
+    font-size: 14px;
+    color: #072;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}

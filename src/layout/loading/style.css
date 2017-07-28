@@ -1,0 +1,73 @@
+.loading{
+    position: relative;
+    height: 32px;
+    width: 100px;
+    margin: 60px auto;
+}
+.loading div{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.loading div:nth-of-type(1){
+    width: 0;
+    height: 0;
+    border-left: 16px solid #279fcf;
+    border-top: 16px solid #279fcf;
+    border-bottom: 16px solid #279fcf;
+    border-right: 16px solid transparent;
+    border-radius: 50%;
+    animation: div1 .5s linear infinite;
+}
+.loading div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    border-left: 16px solid #279fcf;
+    border-top: 16px solid #279fcf;
+    border-bottom: 16px solid #279fcf;
+    border-right: 16px solid transparent;
+    border-radius: 50%;
+    animation: div2 .5s linear infinite;
+}
+.loading div:nth-of-type(3),.loading div:nth-of-type(4),.loading div:nth-of-type(5){
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -3px;
+    background: #279fcf;
+    border-radius: 50%;
+}
+.loading div:nth-of-type(3){
+    animation: div3 1.2s linear .4s infinite;
+}
+.loading div:nth-of-type(4){
+    animation: div3 1.2s linear .8s infinite;
+}
+.loading div:nth-of-type(5){
+    animation: div3 1.2s linear 1.2s infinite;
+}
+
+@keyframes div1{
+    0%{
+        
+    }
+    100%{
+        transform: rotate(90deg)
+    }
+}
+@keyframes div2{
+    0%{
+        
+    }
+    100%{
+        transform: rotate(-90deg)
+    }
+}
+@keyframes div3{
+    0%{
+        transform: translateX(100px)
+    }
+    100%{
+        
+    }
+}

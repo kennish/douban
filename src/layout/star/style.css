@@ -1,0 +1,13 @@
+.rating{
+    margin-top: 5px;
+}
+.rating span{
+    color: rgba(255, 172, 45, 1);
+}
+.rating .rating-star{}
+.rating .rating-star i{
+    color: #d1d1d1;
+}
+.rating .rating-star .act{
+    color: rgba(255, 172, 45, 1);
+}

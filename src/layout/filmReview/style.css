@@ -1,0 +1,61 @@
+.review-wrap{
+    margin-bottom: 20px;
+}
+.review-hd{
+    margin-bottom: 15px;
+}
+.review-hd h2{
+    font-size: 16px;
+    color: #333333;
+}
+.review-hd h2 a{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.review-bd{}
+.review-item{
+    border-top: 1px solid #e1e1e1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.review-item .left{
+    display: block;
+    float: left;
+    width: 68px;
+}
+.review-item .left img{
+    display: block;
+    width: 100%;
+}
+.review-item .right{
+    float: left;
+    width: 522px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.review-item .right .itemTitle{
+    color: #37a;
+    font-size: 14px;
+}
+.review-item .right .myReview{
+    color: #999999;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.review-item .right .myReview span{
+    color: #666666;
+    margin-right: 10px;
+}
+.review-item .right .myReview .rating{
+    display: inline-block;
+}
+.review-item .right .reviewShow{
+    color: #333333;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.review-item .right .reviewShow a{
+    color: #37a;
+}

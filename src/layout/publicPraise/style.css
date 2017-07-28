@@ -1,0 +1,17 @@
+.publicPraise{
+    margin-bottom: 20px;
+}
+.publicPraise .publicPraiseList{
+
+}
+.publicPraise .publicPraiseList p{
+    font-size: 12px;
+    color: #333333;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    padding-left: 10px;
+}
+.publicPraise .publicPraiseList p a{
+    color: #37a;
+    margin-left: 6px;
+}

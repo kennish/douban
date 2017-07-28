@@ -1,0 +1,19 @@
+.nowShowing{
+    margin-bottom: 30px;
+}
+.nowShowing-bd{}
+.nowShowing-bd .screening-bar{
+    margin: 0 -10px;
+}
+.nowShowing-bd  .screening-bar li{
+    width: 25%;
+}
+.nowShowing-ft{
+    text-align: center;
+    padding: 15px 0;
+}
+.showMoreBtn{
+    width: 100%;
+    padding: 6px;
+    cursor: pointer;
+}

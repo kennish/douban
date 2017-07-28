@@ -1,0 +1,32 @@
+.hotRecommend-bar{
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.hotRecommend-bar li{
+    width: 590px;
+    float: left;
+}
+.hotRecommend-bar li .left{
+    float: left;
+}
+.hotRecommend-bar li .left img{
+    display: block;
+    width: 350px;
+    height: 240px;
+}
+.hotRecommend-bar li .right{
+    float: left;
+    width: 240px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.hotRecommend-bar li .right a{
+    font-size: 20px;
+    color: #333333;
+}
+.hotRecommend-bar li .right p{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+}

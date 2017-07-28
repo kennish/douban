@@ -1,0 +1,25 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear:after{
+    display: block;
+    content: '';
+    clear: both;
+    zoom: 1;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+.content{}
+.main{
+    box-sizing: border-box;
+    width: 630px;
+    padding-right: 40px;
+}
+.aside{
+    width: 320px;
+}

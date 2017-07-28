@@ -1,0 +1,18 @@
+.nav-top{
+    background: #545652;
+}
+.global-nav{}
+.global-nav li{
+    float: left;
+}
+.global-nav li a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    color: #d5d5d5;
+    font-size: 12px;
+    padding: 0 12px;
+}
+.global-nav li a:hover,.global-nav li a.active{
+    color: #ffffff;
+}

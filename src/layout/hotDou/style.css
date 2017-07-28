@@ -1,0 +1,19 @@
+.hotDou{
+    margin-bottom: 20px;
+}
+.hotDouList{
+
+}
+.hotDouList p{
+    font-size: 12px;
+    line-height: 42px;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 10px;
+}
+.hotDouList p a{
+    color: #37a;
+}
+.hotDouList p span{
+    color: #999999;
+    float: right;
+}

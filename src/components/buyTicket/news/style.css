@@ -1,0 +1,37 @@
+.news{
+    margin-bottom: 20px;
+}
+.headline{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+.headline .headlineImg{
+    width: 120px;
+}
+.headline .headlineImg img{
+    display: block;
+    width: 100%;
+}
+.headline .headlineShow{
+    box-sizing: border-box;
+    width: 200px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.headline .headlineShow a{
+    color: #37a;
+}
+.headline .headlineShow span{
+    display: block;
+    margin-top: 10px;
+    color: #999999;
+}
+.newsList{}
+.newsList p{
+    padding: 8px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.newsList p a{
+    font-size: 12px;
+    color: #37a;
+}

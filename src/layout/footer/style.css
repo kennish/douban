@@ -1,0 +1,17 @@
+.footer{
+    font-size: 12px;
+}
+.footer .container{
+    border-top: 1px dashed #dddddd;
+}
+.footer .fl{
+    color: #999999;
+    line-height: 34px;
+}
+.footer .fr{
+    line-height: 34px;
+}
+.footer .fr a{
+    color: #37a;
+    margin: 0 6px;
+}

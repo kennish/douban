@@ -1,0 +1,13 @@
+.subtitle{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.subtitle h2{
+    font-size: 16px;
+    color: #333333;
+}
+.subtitle h2 a{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666666;
+}
