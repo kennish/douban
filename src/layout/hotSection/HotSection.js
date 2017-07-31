@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
 import HotSectionTitle from './HotSectionTitle';
-import HotSectionItem from './HotSectionItem';
+import Item from 'item/Item';
 require('./style.css');
 
 export default class HotSection extends React.Component{
@@ -165,7 +165,7 @@ export default class HotSection extends React.Component{
         //得到item的集合
         imgArr = imgArr.map((item, index) => {
             return (
-                <HotSectionItem key={index} {...{item}}/>
+                <Item key={index} {...{item}}/>
             )
         })
         //通过取模输出li,每个li容器里面有8个item

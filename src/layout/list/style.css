@@ -1,0 +1,10 @@
+.list-wp{
+    margin: 0 -10px 50px;
+}
+.list-wp .loadMore{
+    width: 100%;
+    padding: 6px 0;
+    color: #666666;
+    cursor: pointer;
+    margin-top: 20px;
+}

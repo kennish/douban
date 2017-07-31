@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom';
 
-export default function HotSectionItem(props){
+export default function Item(props){
     let {item} = props;
     return (
-        <Link to="/">
+        <Link to="/" className="item">
             <img src={item.images.large} alt=""/>
             <p className="clear">
                 <span className="HotSectiontitle">{item.title}</span>

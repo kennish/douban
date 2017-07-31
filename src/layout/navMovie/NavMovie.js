@@ -24,7 +24,7 @@ export default class NavMovie extends React.Component{
                 <div className="container clear">
                     <ul className="nav-items clear">
                         <li><NavLink to="/buyTicket" activeClassName="active">影讯&购票</NavLink></li>
-                        <li><Link to="/">选电影</Link></li>
+                        <li><NavLink to="/chooseMovie" activeClassName="active">选电影</NavLink></li>
                         <li><Link to="/">电视剧</Link></li>
                         <li><Link to="/">排行榜</Link></li>
                         <li><Link to="/">分类</Link></li>
