@@ -1,5 +1,8 @@
 import {Link} from 'react-router-dom';
 
+let propTypes = {
+    item: PT.object
+}
 export default function Item(props){
     let {item} = props;
     return (
@@ -12,3 +15,4 @@ export default function Item(props){
         </Link>
     )
 }
+Item.propTypes = propTypes;

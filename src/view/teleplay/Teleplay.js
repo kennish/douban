@@ -2,10 +2,10 @@ import {NavLink} from 'react-router-dom';
 import Cfg from 'config/Config.json';
 import Filter from 'filter/Filter';
 import List from 'list/List';
-import HotDou from 'hotDou/HotDou';
 import Loading from 'loading/Loading';
+import Groups from 'teleplay/groups/Groups';
 
-export default class ChooseMovie extends React.Component{
+export default class Teleplay extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -16,7 +16,7 @@ export default class ChooseMovie extends React.Component{
         this.listAjax = this.listAjax.bind(this);
     }
 
-    //电影列表
+    //电视剧列表
     listAjax(count) {
         this.setState({
             ajaxEnd: false
@@ -27,6 +27,7 @@ export default class ChooseMovie extends React.Component{
             data: {count: count},
             dataType: 'jsonp'
         }).done((res) => {
+            console.log(res);
             if(!this.lock){
                 this.setState({
                     listData: res.subjects,
@@ -40,7 +41,7 @@ export default class ChooseMovie extends React.Component{
         this.listAjax(12);
     }
 
-    componentWillUnmount() {
+    componentWillmount() {
         this.lock = true;
     }
 
@@ -52,17 +53,16 @@ export default class ChooseMovie extends React.Component{
                 <div className="content clear">
                     <div className="main fl">
                         <Filter>
-                            <NavLink exact to="/chooseMovie" activeClassName="active">默认</NavLink>
-                            <NavLink to="/chooseMovie/hot" activeClassName="active">热门</NavLink>
-                            <NavLink to="/chooseMovie/new" activeClassName="active">最新</NavLink>
+                            <NavLink exact to="/teleplay" activeClassName="active">默认</NavLink>
+                            <NavLink to="/teleplay/hot" activeClassName="active">热门</NavLink>
+                            <NavLink to="/teleplay/new" activeClassName="active">最新</NavLink>
                         </Filter>
                         {
-                            listData ? <List {...{data:listData, listAjax, ajaxEnd}}/> : <Loading/>
+                            listData ? <List {...{data:listData, ajaxEnd, listAjax}}/> : <Loading/>
                         }
-                        
                     </div>
                     <div className="aside fl">
-                        <HotDou/>
+                        <Groups/>
                     </div>
                 </div>
             </div>

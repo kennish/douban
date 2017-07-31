@@ -1,13 +1,16 @@
 import Item from 'item/Item';
 require('./style.css');
 
+let propTypes = {
+    listAjax: PT.func,
+    list: PT.array,
+    ajaxEnd: PT.bool
+}
 export default class List extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {
-            
-        };
+        this.state = {};
         this.i = 1;
         this.loadMoreAjax = this.loadMoreAjax.bind(this);
     }
@@ -40,3 +43,4 @@ export default class List extends React.Component{
         )
     }
 }
+List.propTypes = propTypes;
