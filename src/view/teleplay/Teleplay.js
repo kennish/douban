@@ -2,7 +2,6 @@ import {NavLink} from 'react-router-dom';
 import Cfg from 'config/Config.json';
 import Filter from 'filter/Filter';
 import List from 'list/List';
-import Loading from 'loading/Loading';
 import Groups from 'teleplay/groups/Groups';
 
 export default class Teleplay extends React.Component{
@@ -57,9 +56,7 @@ export default class Teleplay extends React.Component{
                             <NavLink to="/teleplay/hot" activeClassName="active">热门</NavLink>
                             <NavLink to="/teleplay/new" activeClassName="active">最新</NavLink>
                         </Filter>
-                        {
-                            listData ? <List {...{data:listData, ajaxEnd, listAjax}}/> : <Loading/>
-                        }
+                        <List {...{data:listData, ajaxEnd, listAjax}}/>
                     </div>
                     <div className="aside fl">
                         <Groups/>

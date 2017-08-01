@@ -1,4 +1,5 @@
 import Item from 'item/Item';
+import Loading from 'loading/Loading';
 require('./style.css');
 
 let propTypes = {
@@ -24,6 +25,11 @@ export default class List extends React.Component{
     render() {
         let {data:list, ajaxEnd} = this.props;
         let {loadMoreAjax} = this;
+
+        if(!list){
+            return <Loading/>
+        }
+        
         list = list.map((item,index) => {
             return (
                 <Item key={index} {...{item}}/>
