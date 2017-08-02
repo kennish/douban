@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import Loading from 'loading/Loading';
 
 require('./style.css');
 
@@ -7,6 +8,9 @@ import FilmReviewItem from './FilmReviewItem';
 export default class FilmReview extends React.Component{
     render() {
         let {data:list} = this.props;
+        if(!list){
+            return <Loading />
+        }
         list = list.map((item, index) => {
             return (
                 <FilmReviewItem key={index} {...{item}}/>

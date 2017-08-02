@@ -26,11 +26,7 @@ export default class NavMovie extends React.Component{
                         <li><NavLink to="/buyTicket" activeClassName="active">影讯&购票</NavLink></li>
                         <li><NavLink to="/chooseMovie" activeClassName="active">选电影</NavLink></li>
                         <li><NavLink to="/teleplay" activeClassName="active">电视剧</NavLink></li>
-                        <li><Link to="/">排行榜</Link></li>
-                        <li><Link to="/">分类</Link></li>
-                        <li><Link to="/">影评</Link></li>
-                        <li><Link to="/">2016年度榜单</Link></li>
-                        <li><Link to="/">2016观影报告</Link></li>
+                        <li><NavLink to="/Review" activeClassName="active">影评</NavLink></li>
                     </ul>
                 </div>
 

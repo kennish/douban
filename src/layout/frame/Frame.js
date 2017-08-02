@@ -6,6 +6,7 @@ import Home from 'home/Home';
 import BuyTicket from 'buyTicket/BuyTicket';
 import ChooseMovie from 'chooseMovie/ChooseMovie';
 import Teleplay from 'teleplay/Teleplay';
+import Review from 'review/Review';
 import Footer from 'footer/Footer';
 
 export default class Frame extends React.Component{
@@ -18,6 +19,7 @@ export default class Frame extends React.Component{
                 <Route path='/buyTicket' component={BuyTicket}/>
                 <Route path='/chooseMovie' component={ChooseMovie}/>
                 <Route path="/teleplay" component={Teleplay}/>
+                <Route path="/Review" component={Review}/>
                 <Footer/>
             </div>
         )
